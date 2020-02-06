@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Магазин аукцион - Одежда
+{% endblock title %}
+
+
+{% block header %}
+    Одежда
+{% endblock header %}
+
+
+{% block content %}
+    <div id="main_box" class="container">
+        <div class="top_bar">
+            <a class="bar_text" href="/category">Категории</a>
+            <a> -> </a>
+            <a class="bar_text" href="/category/wear">Одежда</a>
+            <a href="/category/create">Добавить объявление</a>
+        </div>
+        <form>
+            <button class="new_wear">Подать обявление</button>
+        </form>
+        <hr class="my_row">
+    </div>
+    <style>
+        #main_box{
+            margin-top: 50px;
+            text-align:center;
+        }
+        .my_row{
+            border-color:gray;
+            margin-top:60px;
+        }
+        .top_bar{
+            text-align:left;
+        }
+        .bar_text{
+            color:black;
+            text-decoration:none;
+        }
+        .new_wear{
+            background-color:green;
+            float:right;
+        }
+    </style>
+{% endblock content %}

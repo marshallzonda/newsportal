@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Магазин аукцион - Категории
+{% endblock title %}
+
+
+{% block header %}
+    Страница с категориями
+{% endblock header %}
+
+
+{% block content %}
+    <div id="main_box" class="container">
+        <div class="text1">
+            <a class="name" href="/category/wear"> Одежда</a>
+        </div>
+        <div class="text2">
+            <a class="name" href="/category/electronics"> Электроника</a>
+        </div>
+        <div class="text3">
+            <a class="name" href="/category/forhome"> Товары для дома</a>
+        </div>
+        <div class="text4">
+            <a class="name" href="/category/turism"> Товары для отдыха </a>
+        </div>
+        <div class="block1">
+        </div>
+        <div class="block2">
+        </div>
+        <div class="block3">
+        </div>
+        <div class="block4">
+
+        </div>
+        <hr class="my_row">
+    </div>
+    <style>
+        #main_box{
+            margin-top: 50px;
+            text-align:center;
+            margin-top:70px;
+        }
+
+        .my_row{
+            border-color:gray;
+            margin-top:60px;
+        }
+        .text1{
+            width:25%;
+            float:left;
+        }
+        .text2{
+            width:25%;
+            float:right;
+        }
+         .text3{
+            width:25%;
+            float:right;
+        }
+        .block1{
+
+            width:25%;
+            height:150px;
+            float:left;
+            background-image:url("../../static/img/wear.jpg");
+            background-size:cover;
+            border-color:1px solid black;
+
+        }
+        .block2{
+
+            width:25%;
+            height:150px;
+            float:right;
+            background-image:url("../../static/img/electronics.jpg");
+            background-size:cover;
+        }
+        .block3{
+
+            height:150px;
+            width:25%;
+            float:right;
+            background-image:url("../../static/img/home.jpg");
+            background-size:cover;
+        }
+        .block4{
+
+            height:150px;
+            background-image:url("../../static/img/turism.jpg");
+            background-size:270px;
+
+        }
+        .container{
+
+        }
+        .name{
+            color:#330000;
+            font:bold;
+            font-size:20px;
+            text-decoration:none;
+        }
+
+        .name:hover{
+            color:silver;
+            border:2px solid yellow;
+            text-decoration:none;
+
+        }
+    </style>
+{% endblock content %}

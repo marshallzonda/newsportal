@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Магазин аукцион - Товыры для дома
+{% endblock title %}
+
+
+{% block header %}
+    Товары для дома
+{% endblock header %}
+
+
+{% block content %}
+    <div id="main_box" class="container">
+        <div class="top_bar">
+            <a class="bar_text" href="/category">Категории</a>
+            <a> -> </a>
+            <a class="bar_text" href="/category/forhome">Товары для дома</a>
+        </div>
+        <hr class="my_row">
+    </div>
+    <style>
+        #main_box{
+            margin-top: 50px;
+            text-align:center;
+        }
+        .my_row{
+            border-color:gray;
+            margin-top:60px;
+        }
+        .top_bar{
+            text-align:left;
+        }
+        .bar_text{
+            color:black;
+            text-decoration:none;
+        }
+    </style>
+{% endblock content %}
